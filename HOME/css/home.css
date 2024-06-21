@@ -1,0 +1,71 @@
+/* styles.css */
+body {
+    background: #060930;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.group {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    position: relative; 
+    overflow: hidden; 
+}
+
+.group::before {
+    content: "";
+    position: absolute;
+    top: -50px; 
+    left: -50px; 
+    width: 100px; 
+    height: 100px; 
+    background-color: rgba(255, 255, 255, 0.3); 
+    border-radius: 50%; 
+    transform: rotate(45deg); 
+    z-index: -1; 
+}
+
+#welcomeMessage {
+    font-size: 3rem;
+    color:#F4ABC4; 
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.text-color{
+    color: #F582A7;
+}
+
+input,
+textarea {
+    background-color: transparent !important;
+    color: #fff !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgb(182, 182, 182) !important;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 0 0 transparent !important;
+}
+
+.bg-colory{
+    color: #FF5C8D;
+    border-color:#FF5C8D ;
+ 
+}
+.bg-colory:hover{
+    color: #fff;
+    background: #FF5C8D;
+    border-color: #FF5C8D;
+}

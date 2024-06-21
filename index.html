@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./Sign Up/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Sign Up/css/all.min.css">
+    <link rel="stylesheet" href="./Sign Up/css/main.css">
+    <title>Login</title>
+</head>
+
+<body>
+  <form id="registerForm">
+    <div class="container my-5 text-center">
+        <div class="group m-auto w-75 p-5">
+            <h1>Smart Login System</h1>
+
+            <div class="input-group my-3">
+                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                <input id="signupName" class="form-control" placeholder="Enter Your Name" type="text">
+            </div>
+            
+            <div class="input-group my-3">
+                <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                <input id="signupEmail" class="form-control" placeholder="Enter Your Email" type="email">
+            </div>
+
+            <div class="input-group my-3">
+                <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                <input id="signupPassword" class="form-control" placeholder="Enter Password" type="password">
+            </div>
+
+            <div class="alert alert-danger d-none" id="nameAlert">At Least Two Characters Name</div>
+            <div class="alert alert-danger d-none" id="emailAlert">Please Enter A Valid Email</div>
+            <div class="alert alert-danger d-none" id="passwordAlert">At Least 8 Characters <br> at least one letter and one number</div>
+            <div class="alert alert-danger d-none" id="existAlert">Email Is Already Exist</div>
+            <div class="alert alert-success d-none" id="successAlert">Success You Can Login</div>
+
+            <button class="btn bg-colory w-100 my-3" id="submitbtn">Sign Up</button>
+
+            <p class="text-white mt-3">Already have an account?
+                <a class="text-white text-decoration-none" href="Login/index.html">Sign In</a>
+            </p>
+        </div>
+    </div>
+</form>
+
+   
+    <script src="./Sign Up/js/bootstrap.min.js"></script>
+    <script src="./Sign Up/js/index.js"></script>
+
+
+</body></html>
